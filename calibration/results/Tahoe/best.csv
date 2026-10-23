@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Tahoe,0.835403881819573,0.881695266019584,0.64688267732975,1.84382896998432,0.106539253706912,0.585398413419236,0.0549850275730288,0.085,0.429149425516163,0.590475065232226,0.881383665560807,0.848204853012144,74,4500,1423.3,69895,80735,"",20261021

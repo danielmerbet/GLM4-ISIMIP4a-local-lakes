@@ -17,7 +17,9 @@ compare every delivered lake with its observations.
 | Author / contact | Daniel Mercado-Bettín, daniel.mercado@csic.es |
 | Institutions | Spanish National Research Council (CSIC), Centre for Advanced Studies of Blanes (CEAB), Spain; Vrije Universiteit Brussel (VUB), Belgium |
 
-Results at a glance: 76 of 77 lakes delivered (Tahoe follows when its calibration finishes). Median water-temperature RMSE of the delivered files: **1.11 °C** in the calibration years, **1.33 °C** in the validation years and **1.44 °C** in years the calibration never used (45 lakes); GLM with its default parameters: 1.99 °C in the validation years.
+<!-- BEGIN:summary -->
+Results at a glance: 77 of 77 lakes delivered. Median water-temperature RMSE of the delivered files: **1.11 °C** in the calibration years, **1.31 °C** in the validation years and **1.44 °C** in years the calibration never used (45 lakes); GLM with its default parameters: 1.99 °C in the validation years.
+<!-- END:summary -->
 
 ![Validation error per lake](figures/summary_map.png)
 
@@ -136,7 +138,9 @@ light-extinction range):
   GLM defaults, generations, runtime) and `trace.csv` (convergence); all lakes in
   `calibration/results_all.csv`.
 
-Over the 76 calibrated lakes (median, interquartile range in brackets): calibration RMSE **1.04 °C** (0.85-1.28), validation **1.37 °C** (1.08-1.69); with GLM's default parameters 2.00 and 1.99 °C. The calibration improved the validation RMSE in 65 of 76 lakes. Calibrated parameter medians: `wind_factor` 1.05, `sw_factor` 0.967, `kw_scaling` 1.29, `coef_mix_hyp` 1.33, `coef_mix_conv` 0.17, `coef_mix_turb` 0.503; 20 lakes have at least one parameter at a bound (`at_bound` in `results_all.csv`).
+<!-- BEGIN:calibration -->
+Over the 77 calibrated lakes (median, interquartile range in brackets): calibration RMSE **1.04 °C** (0.84-1.28), validation **1.37 °C** (1.06-1.69); with GLM's default parameters 1.95 and 1.99 °C. The calibration improved the validation RMSE in 66 of 77 lakes. Calibrated parameter medians: `wind_factor` 1.05, `sw_factor` 0.965, `kw_scaling` 1.28, `coef_mix_hyp` 1.36, `coef_mix_conv` 0.17, `coef_mix_turb` 0.505; 20 lakes have at least one parameter at a bound (`at_bound` in `results_all.csv`).
+<!-- END:calibration -->
 
 ![RMSE per lake](figures/summary_rmse_by_lake.png)
 
@@ -178,7 +182,22 @@ assigned to day D − 1 (checked against the forcing: daily shortwave correlates
 previous day, 0.888 with the stamp's day). Time axis: days since 1901-01-01, proleptic Gregorian;
 missing value 1e20; compressed (zlib). Each lake folder also has `SHA256SUMS` and the namelist used.
 
-**Note on `lakeheatf`.** Averaged over 1901-2025, the net surface heat flux is not zero in every lake although the lakes do not warm at that rate: median +3.5 W m⁻², from −29 (Ngoring) to +36 W m⁻² (Mt Bold); warm reservoirs are positive, cold ice-covered lakes negative. The flux is computed exactly as defined (surface fluxes of GLM, positive into the lake); the difference must leave the lake by other routes in GLM (e.g. the evaporation-compensating inflow and the overflow, or energy taken up by the ice). This is being investigated; use `lakeheatf` with care for long-term energy budgets.
+<!-- BEGIN:lakeheatf -->
+**Note on `lakeheatf`.** Averaged over 1901-2025, the net surface heat flux is not zero in every lake although the lakes do not warm at that rate: median +3.6 W m⁻², from -29 (Ngoring) to +36 W m⁻² (MtBold); warm reservoirs are positive, cold ice-covered lakes negative. The flux is computed exactly as defined (surface fluxes of GLM, positive into the lake); the difference must leave the lake by other routes in GLM (e.g. the evaporation-compensating inflow and the overflow, or energy taken up by the ice). This is being investigated; use `lakeheatf` with care for long-term energy budgets.
+<!-- END:lakeheatf -->
+
+**Known limitations.**
+- *Deep water of the deepest lakes.* In Thun (212 m), Neuchâtel (152 m) and Tahoe (501 m) GLM rarely mixes the
+  lake to the bottom, so the deep water keeps nearly the temperature it starts with: `bottemp` changes by less than
+  0.5 °C over 1901-2025 (Thun 0.03 °C), and in Tahoe it stays at 4.5 °C while the observed water at 437 m is
+  5.0-5.3 °C and warming. The upper water is calibrated (Tahoe validation RMSE 0.8 °C); do not use `bottemp` or deep
+  `watertemp` of these lakes for trends. (Kivu, Bosumtwi and Edward are permanently stratified in reality too.)
+- *Ice on Tahoe.* The model forms ice in two cold winters (about 20 days around 1917 and 58 days around 1949);
+  Lake Tahoe does not freeze.
+- *Trout Lake hypsometry.* The ISIMIP3 hypsometry used for Trout Lake gives a surface area of 160.8 km², about ten
+  times the lake's area (15.65 km²); found when the observations were reviewed for
+  [ISIMIP4_Local_Lakes_ObsData](https://github.com/ISIMIP-LAKE/ISIMIP4_Local_Lakes_ObsData). The Trout Lake run will be
+  repeated once the provider confirms the correct areas.
 
 ![All variables, Lake Erken](figures/lakes/Erken_variables.png)
 
@@ -190,17 +209,19 @@ half, and all other years (observations the calibration never saw). Scores per l
 `results/scores.csv`. Figures per lake: `figures/lakes/<Lake>_temperature.png` and
 `figures/lakes/<Lake>_variables.png` ([list below](#figures-per-lake)).
 
+<!-- BEGIN:evaluation -->
 Median RMSE (°C) of the delivered files per lake, and the bias (model − observation):
 
 | Observations | Lakes | Median RMSE | Median bias |
 |---|---|---|---|
-| calibration half | 76 | 1.11 | -0.04 |
-| validation half | 76 | 1.33 | +0.01 |
+| calibration half | 77 | 1.11 | -0.05 |
+| validation half | 77 | 1.31 | -0.00 |
 | all other years 1901-2025 | 45 | 1.44 | -0.02 |
 
 The delivered run differs from the calibration runs (125 years with a repeated-forcing spin-up instead of a 20-year spin-up and an observed initial profile), so its calibration/validation scores differ slightly from `best.csv`.
 
-File checks (`local_lakes/qc_isimip.py`, `results/qc.csv`): every lake has the 13 files, 45,656 days, the required attributes and matching checksums; all values in plausible ranges and finite, except `thermodepth` on days without a thermocline. `watertemp` has missing values only for levels below the lake bottom on days when the water level is below the spill level (ice, evaporation): median 0.2 % of days, at most 3 levels.
+File checks (`local_lakes/qc_isimip.py`, `results/qc.csv`): every lake has the 13 files, 45,656 days, the required attributes and matching checksums; all values in plausible ranges and finite, except `thermodepth` on days without a thermocline. `watertemp` has missing values only for levels below the lake bottom on days when the water level is below the spill level (ice, evaporation): median 0.1 % of days, at most 3 levels.
+<!-- END:evaluation -->
 
 ![All observations against the model](figures/summary_obs_vs_model.png)
 
@@ -208,6 +229,7 @@ File checks (`local_lakes/qc_isimip.py`, `results/qc.csv`): every lake has the 1
 
 ### Figures per lake
 
+<!-- BEGIN:lake_table -->
 | Lake | Depth (m) | RMSE cal / val / other (°C) | Figures |
 |---|---|---|---|
 | Allequash Lake | 7 | 1.12 / 2.17 / 1.91 | [temperature](figures/lakes/Allequash_temperature.png), [all variables](figures/lakes/Allequash_variables.png) |
@@ -272,6 +294,7 @@ File checks (`local_lakes/qc_isimip.py`, `results/qc.csv`): every lake has the 1
 | Sparkling Lake | 19 | 0.93 / 1.30 / 1.49 | [temperature](figures/lakes/Sparkling_temperature.png), [all variables](figures/lakes/Sparkling_variables.png) |
 | Lake Stechlin | 70 | 0.82 / 0.97 / 1.12 | [temperature](figures/lakes/Stechlin_temperature.png), [all variables](figures/lakes/Stechlin_variables.png) |
 | Lake Sunapee | 34.5 | 1.20 / 1.45 / 1.95 | [temperature](figures/lakes/Sunapee_temperature.png), [all variables](figures/lakes/Sunapee_variables.png) |
+| Lake Tahoe | 502.4 | 0.59 / 0.80 / – | [temperature](figures/lakes/Tahoe_temperature.png), [all variables](figures/lakes/Tahoe_variables.png) |
 | Lake Taihu | 13.31 | 1.59 / 1.42 / 2.74 | [temperature](figures/lakes/Taihu_temperature.png), [all variables](figures/lakes/Taihu_variables.png) |
 | Lake Tarawera | 87.5 | 0.42 / 0.93 / 0.48 | [temperature](figures/lakes/Tarawera_temperature.png), [all variables](figures/lakes/Tarawera_variables.png) |
 | Lake Thun | 212 | 1.00 / 1.15 / 1.03 | [temperature](figures/lakes/Thun_temperature.png), [all variables](figures/lakes/Thun_variables.png) |
@@ -286,6 +309,7 @@ File checks (`local_lakes/qc_isimip.py`, `results/qc.csv`): every lake has the 1
 | Windermere | 42 | 0.80 / 1.14 / – | [temperature](figures/lakes/Windermere_temperature.png), [all variables](figures/lakes/Windermere_variables.png) |
 | Lake Wingra | 4 | 1.10 / 1.51 / 1.37 | [temperature](figures/lakes/Wingra_temperature.png), [all variables](figures/lakes/Wingra_variables.png) |
 | Zlutice Reservoir | 24.8 | 1.24 / 1.60 / 1.44 | [temperature](figures/lakes/Zlutice_temperature.png), [all variables](figures/lakes/Zlutice_variables.png) |
+<!-- END:lake_table -->
 
 ## 8. Reproducing the simulations
 
