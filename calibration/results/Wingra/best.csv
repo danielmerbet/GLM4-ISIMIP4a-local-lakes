@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Wingra,1.0733676993246,0.936395046151876,1.92068670279564,0.716142240635287,0.118086697100082,0.631030197022483,1.27149459725071,0.662,1.07758046924904,1.62175871899583,1.22597801770793,1.77840384713503,72,4380,33.2,379,365,"",20261021

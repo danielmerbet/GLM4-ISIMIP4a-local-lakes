@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Feeagh,1.44771856167163,1.15727491477955,1.21653420233608,1.9405967798567,0.255277558044039,0.542179287604324,0.283452469144307,0.233,0.733808906051079,0.844253219899834,2.37496312320128,2.13797139700691,65,3960,74,21943,13627,"",20261021

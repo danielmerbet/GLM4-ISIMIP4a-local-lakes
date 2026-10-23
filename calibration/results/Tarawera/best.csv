@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Tarawera,0.891061080992221,0.923911054789014,0.60062212961362,1.89817368617325,0.213679412568201,0.406771603965926,0.107511361200838,0.179,0.427762190472291,0.936352650590688,1.48026920770781,1.80511755471974,74,4500,100.8,4610,4886,"",20261021

@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Neuchatel,0.990129734361604,0.997901562344136,0.612216382125081,1.68514623351454,0.231241874612369,0.58613930548091,0.0863225098796364,0.141,1.07387910989181,0.995703302066579,1.73608225095856,1.73640283658707,59,3600,410.3,637,605,"",20261021

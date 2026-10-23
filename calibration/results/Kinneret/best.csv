@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Kinneret,1.01374824432423,1.07978390951082,0.580909528187476,1.25275353329908,0.183544752145782,0.571550335719244,0.141741924877744,0.244,0.806172847051191,1.07903487732777,2.70575159200408,3.54841080058063,29,1800,41.9,17395,66419,"",20261021

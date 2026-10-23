@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+BigMuskellunge,0.983636901975518,1.03205291014297,0.633159889742468,0.804304422408056,0.147297069876348,0.471231797062088,0.20767644383553,0.328,1.06051253567239,1.4147222100001,2.25343110461189,1.84976084413845,87,5280,45.7,1746,1674,"",20261021

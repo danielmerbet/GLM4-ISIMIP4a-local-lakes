@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Paajarvi,1.21166734147118,1.09567833770998,1.61413958217949,0.514867138154805,0.201304910006002,0.580684864055365,0.300229962285385,0.186,1.10107059233537,1.36595250558659,2.34333577388773,2.32142032813821,48,2940,52.1,566,510,"",20261021

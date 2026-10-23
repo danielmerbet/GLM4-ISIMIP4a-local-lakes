@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Hulun,1.47136441615704,1.29942165273242,2.6147303993348,0.274634177814585,0.168841675020459,0.414153695832067,1.32305358206341,0.506,2.77402478479209,2.40664017903215,3.86283822293527,2.91326920583775,52,3180,21,48,50,sw_factor,20261021

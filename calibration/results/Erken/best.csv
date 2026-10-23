@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Erken,1.07696858438253,1.01164314034386,1.20926880183276,1.66183629265334,0.276129498689992,0.485758476797491,0.396640167001145,0.328,1.0221314645791,1.61349218097371,1.67209580250451,1.17074917806105,46,2820,34.7,69406,90665,"",20261021

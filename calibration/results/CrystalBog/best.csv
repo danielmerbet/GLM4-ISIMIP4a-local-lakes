@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+CrystalBog,0.870235180810537,0.88297997139776,2.98689824773464,1.82900780667802,0.105743311959817,0.469570780696746,2.6553525422361,0.889,2.28574753854587,2.99917323960133,2.64223201658156,3.05436265295955,53,3240,15,264,265,kw_scaling,20261021

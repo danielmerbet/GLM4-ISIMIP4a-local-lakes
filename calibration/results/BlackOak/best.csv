@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+BlackOak,1.05775510873388,0.969532999431688,0.819820254526115,0.783034496451728,0.293533313088119,0.459499640574177,0.245946076357835,0.3,0.762334791731887,2.07924581401846,1.87967135300102,1.2527526599004,63,3840,38.7,284,324,"",20261021

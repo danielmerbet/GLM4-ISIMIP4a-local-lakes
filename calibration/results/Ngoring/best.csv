@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Ngoring,0.860945569316391,1.15356255918741,2.76875408929773,1.96655772349052,0.15926675301145,0.527554747253992,0.772482390914066,0.279,0.802520934845204,2.3379733134423,1.63567097037084,1.03704836982446,27,1680,15.9,2784,2773,"",20261021

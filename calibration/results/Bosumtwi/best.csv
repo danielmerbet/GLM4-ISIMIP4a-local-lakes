@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Bosumtwi,0.377782668860164,0.735634998476133,2.45628450562548,1.91141792462693,0.217723249830306,0.531076611831784,0.474062909585718,0.193,0.271213424493556,0.480516014410838,0.724713205552868,0.735298950528627,31,1920,25.2,916,906,"",20261021

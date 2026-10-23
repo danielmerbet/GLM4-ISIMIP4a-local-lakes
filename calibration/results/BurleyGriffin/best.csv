@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+BurleyGriffin,1.29219176147271,1.12938491933304,2.73724704468623,1.29516869802261,0.163944838754833,0.412136494494602,0.982671689042356,0.359,1.27517160668273,1.37246735053652,2.96159389177616,2.84101601554734,35,2160,20.3,226,261,"",20261021

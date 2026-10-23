@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Monona,1.02159082568344,0.892189473505351,0.859170278337403,0.455218747519517,0.242728956554458,0.482789553957991,0.280089510737993,0.326,1.15336584673261,1.69932351781257,2.15998464707839,1.87522067557378,53,3240,35.4,1891,1738,"",20261021

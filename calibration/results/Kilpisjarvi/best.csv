@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Kilpisjarvi,1.47960931692366,0.921122781970785,2.17215777719459,1.85731058612,0.124184192192555,0.606945478215702,0.521317866526701,0.24,0.938517316651574,1.28314431998856,2.86017032367335,2.3890477155848,60,3660,53.6,2060,8246,"",20261021

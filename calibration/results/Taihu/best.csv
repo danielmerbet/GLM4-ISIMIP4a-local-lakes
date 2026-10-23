@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Taihu,1.08516060785263,0.798842657495784,2.59389011702668,0.62749910760825,0.155232165689275,0.418681471991891,1.03236826657662,0.398,1.70626893695319,1.52136274248374,1.80548973625842,1.3194054446482,30,1860,14.5,60,61,"",20261021

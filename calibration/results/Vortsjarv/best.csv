@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Vortsjarv,1.25926502552049,0.996385755416649,2.34977998272589,1.43443726896405,0.224730755994096,0.405488772361603,1.30177811043014,0.554,1.16102453774021,1.17597609108509,1.47858669273491,1.19771948533066,52,3180,19.9,1852,1907,"",20261021

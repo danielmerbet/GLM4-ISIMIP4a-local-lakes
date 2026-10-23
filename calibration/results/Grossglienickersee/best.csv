@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Grossglienickersee,0.670706438009266,0.958749210607231,0.737210803284118,0.799130955925544,0.129343561540107,0.562301397556439,0.314789013002318,0.427,0.844210165222278,1.06489525434018,1.3637707432523,1.41728434171566,100,6060,35.6,4025,4036,"",20261021

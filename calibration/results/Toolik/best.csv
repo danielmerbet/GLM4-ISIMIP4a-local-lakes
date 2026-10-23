@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Toolik,1.49979500182341,1.24189603588869,0.949715277302987,1.75152921320943,0.154078378949623,0.60266659702737,0.284914583190896,0.3,1.66687918096181,1.62135292089516,2.84003729627215,2.36382812289958,57,3480,35.4,1667,1792,wind_factor,20261021

@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Zlutice,1.48485054977991,1.20208881744705,1.43371653123957,1.99451547811778,0.131136920937194,0.48401606361154,0.438717258559309,0.306,1.16873143931809,1.55731439474354,1.63892602833603,2.06211130619127,83,5040,183.9,2329,3434,coef_mix_hyp,20261021

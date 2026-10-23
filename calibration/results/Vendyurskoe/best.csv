@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Vendyurskoe,1.1430955898876,0.974749412885854,1.3720270300284,1.91574498997959,0.252243334961543,0.511233132100091,0.533718514681049,0.389,1.21461954393932,1.21944690523731,1.65679144520374,1.65280493337302,38,2340,22,15670,22289,"",20261021

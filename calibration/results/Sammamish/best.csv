@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Sammamish,1.23148677841514,1.00695979053095,1.164543474998,1.85209001258481,0.235274064992675,0.536132838982643,0.323743086049445,0.278,0.969326397096247,1.22882629640948,1.48197492940416,1.32858174929123,40,2460,49.4,2689,2557,"",20261021

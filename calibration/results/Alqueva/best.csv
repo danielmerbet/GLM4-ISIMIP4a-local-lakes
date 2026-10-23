@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Alqueva,1.43848623743739,1.0944866995131,2.52884178608656,1.91802147066695,0.299882263782878,0.369115356009019,0.493124148286879,0.195,1.5188442313202,1.6034306970764,2.26293031592423,2.18224786620303,91,5520,142.4,13402,12993,coef_mix_conv,20261021

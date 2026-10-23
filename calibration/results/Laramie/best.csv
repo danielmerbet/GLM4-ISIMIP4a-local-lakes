@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Laramie,0.892020403644643,0.806194937235932,2.96071762962532,1.56353314398725,0.121108119490314,0.478960959611081,1.60766967288655,0.543,0.594423042456332,0.808146533103131,3.68910846423718,4.814926308837,94,5700,26.5,91,50,"",20261021

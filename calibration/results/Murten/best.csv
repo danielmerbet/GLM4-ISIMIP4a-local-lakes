@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Murten,1.4889776992951,1.08091928546447,0.816600650816465,1.87011614941337,0.285463779978454,0.471104508261905,0.193534354243502,0.237,1.17365316550533,1.50284413805195,1.94507730826261,2.31148413060002,76,4620,81.2,793,779,wind_factor,20261021

@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Sunapee,1.22563068581577,0.872713176195587,1.16058476220351,1.91770694807637,0.187623070710855,0.547075421408498,0.308715546746133,0.266,0.978168610009068,1.55129749251195,2.52480946322273,2.2194966391852,46,2820,49.1,5279,8714,"",20261021

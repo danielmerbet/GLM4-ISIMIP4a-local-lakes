@@ -1,0 +1,7 @@
+parameter,median
+wind_factor,1.0
+sw_factor,1.0
+kw_scaling,1.0
+coef_mix_hyp,0.5
+coef_mix_conv,0.2
+coef_mix_turb,0.51

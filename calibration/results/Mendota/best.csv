@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Mendota,0.914655969443265,0.907729826619849,0.598052361989766,0.881984370056257,0.17012402783148,0.591713717207313,0.182405970406878,0.305,1.0657457479627,1.54270005974196,1.87761467293654,1.98619189949649,43,2640,35,2139,2030,"",20261021

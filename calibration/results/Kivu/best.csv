@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Kivu,0.335160954622552,0.849926987695129,2.47192601633623,1.95468310417082,0.163856710311045,0.61568259445501,0.215057563421252,0.087,0.221806150396034,0.246402257598832,1.60893891197902,1.4809969194232,64,3900,916,8560,5040,"",20261021

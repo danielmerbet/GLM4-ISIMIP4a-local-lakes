@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Arendsee,0.76139710613424,0.776517771857765,0.968322464436316,1.26367475199513,0.158635496362777,0.535839253222341,0.221745844355916,0.229,0.688401429763563,0.944201966747777,0.955218090935786,1.23603200338906,65,3960,61.5,21283,22046,"",20261021

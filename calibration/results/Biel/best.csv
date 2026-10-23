@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Biel,1.45929080899805,1.12577687874436,0.585653389105573,1.48167395947967,0.266873882804066,0.6223979532253,0.11244545070827,0.192,1.04796576503507,1.28399473154183,1.83691660108116,2.50155161693857,23,1440,31.5,214,632,"",20261021

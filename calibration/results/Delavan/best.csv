@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Delavan,0.886588485246245,0.933700442470878,0.536911338076443,1.40372502246404,0.258368079140446,0.526500768263448,0.195435727059825,0.364,0.998951192281846,1.53590741057948,2.58071989724894,2.29286964431607,56,3420,34,411,648,"",20261021

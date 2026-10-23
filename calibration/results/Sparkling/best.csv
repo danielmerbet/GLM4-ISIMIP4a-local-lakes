@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Sparkling,0.871225263684592,0.965294062604934,0.675281607080251,0.262891893730454,0.145838439453408,0.425542647667361,0.230946309621446,0.342,0.874554547362121,1.31354808233142,1.6352130822556,1.55935940672702,95,5760,55,1665,1671,"",20261021

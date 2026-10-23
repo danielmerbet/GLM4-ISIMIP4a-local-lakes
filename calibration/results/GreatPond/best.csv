@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+GreatPond,1.21166734147118,1.09567833770998,1.28191704784525,0.998397677587303,0.216092891598466,0.368564279307611,0.42046879169324,0.328,1.06703555210912,1.29004367301042,2.59337145857939,1.99067221679962,51,3120,23.7,2440,2486,"",20261021

@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+MellerstaHarrsjon,1.44902054125335,1.29169004336134,0.772919245021586,0.243594992195303,0.203613556349883,0.44204016289135,0.411193038351484,0.532,1.95307205686414,1.81474527246929,2.25537423103864,2.09112373913354,46,2820,22,10474,12606,sw_factor,20261021

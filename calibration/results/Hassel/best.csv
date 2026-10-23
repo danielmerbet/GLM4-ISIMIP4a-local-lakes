@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Hassel,0.6321301910089,0.7638482490328,1.27314946660764,0.172228280394955,0.111963883306978,0.63927074380872,0.495255142510372,0.389,0.81739170369683,1.09807023524755,3.28070881241289,3.93915581181357,100,6060,52.5,2484,4191,"",20261021

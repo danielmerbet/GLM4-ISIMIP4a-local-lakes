@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Villasjon,1.49991647035755,1.27185973292217,1.55656303826988,1.11641324008613,0.102920366349434,0.542819206056082,1.85542314161769,1.192,2.39475549650864,2.59030992680961,3.45211839845139,3.15545240402155,41,2520,9.1,4941,5052,wind_factor,20261021

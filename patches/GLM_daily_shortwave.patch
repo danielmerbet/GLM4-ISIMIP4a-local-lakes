@@ -1,0 +1,80 @@
+--- a/src/glm_surface.c
++++ b/src/glm_surface.c
+@@ -1493,30 +1493,45 @@
+     else {
+         //# Determine the daylength (hours) from the latitude (entered as -ve
+         //  for and the number of days since the start of the year
+-        SOLAR0 = -23.45 * sin((284 + kDays) * 2.0 * Pi / 365.0);
+-        SOLAR1 = -23.45 * sin((284 + mDays) * 2.0 * Pi / 365.0);
++        //# GLM4-AED3 patch (daily_shortwave): solar declination is +23.45 sin(2 pi (284 + n) / 365)
++        //  (Cooper 1969; +23.45 at the June solstice). The minus sign gave northern lakes winter
++        //  day lengths in summer (Mendota, July: ~9 h instead of ~15 h) and polar NIGHT in June.
++        SOLAR0 = 23.45 * sin((284 + kDays) * 2.0 * Pi / 365.0);
++        SOLAR1 = 23.45 * sin((284 + mDays) * 2.0 * Pi / 365.0);
+ 
+         //# Determine the angle of the sun's arc from sunrise to sunset after
+         //  converting to radians, first determine solar declination
+         SOLAR0 = SOLAR0 * Pi / 180;
+         SOLAR1 = SOLAR1 * Pi / 180;
+-        SOLARW = 2.0 * acos(-tan(Latitude) * tan(SOLAR0));
+-        SOLARY = 2.0 * acos(-tan(Latitude) * tan(SOLAR1));
++        //# GLM4-AED3 patch (daily_shortwave): clamp the acos argument to [-1, 1]. Beyond the polar
++        //  circles it leaves [-1, 1] in polar day and night; acos then returns NaN, every branch
++        //  below compares false and lQSW stays 0 (no sunlight at all). Polar day -> 24 h day;
++        //  polar night -> 0, floored at 1 h so the division below stays finite.
++        SOLARW = 2.0 * acos(MAX(-1.0, MIN(1.0, -tan(Latitude) * tan(SOLAR0))));
++        SOLARY = 2.0 * acos(MAX(-1.0, MIN(1.0, -tan(Latitude) * tan(SOLAR1))));
+ 
+         //# Calculate the daylength (Secs) using angular velocity 15 degrees/hr
+-        TD0 = 3600 * SOLARW / (15 * Pi/180);
+-        TD1 = 3600 * SOLARY / (15 * Pi/180);
++        TD0 = MAX(3600., 3600 * SOLARW / (15 * Pi/180));
++        TD1 = MAX(3600., 3600 * SOLARY / (15 * Pi/180));
++
++        //# GLM4-AED3 patch (daily_shortwave): the half-sine below is centred on clock 0, and GLM's
++        //  iclock is seconds since MIDNIGHT, so daily shortwave fell between ~20:00 and ~05:00
++        //  (checked with hourly output). Use a clock that is 0 at solar noon, and today's
++        //  daily total and day length for the whole day (the original blended yesterday's into
++        //  the part of the day before clock 0).
++        int iclk = (iclock + iSecsPerDay/2) % iSecsPerDay;
++        TD0 = TD1;
+ 
+         //# Set the end of the GLM time step
+-        jClock = iclock + noSecs;
++        jClock = iclk + noSecs;
+ 
+         //# Convert the start and end of the day to radians
+-        if (iclock < 0.5*TD0)
+-            RADTIM0 = iclock*Pi/TD0+Pi/2;
+-        else if (iclock >= 0.5*TD0 && iclock <= SecsPerDay-0.5*TD0)
++        if (iclk < 0.5*TD0)
++            RADTIM0 = iclk*Pi/TD0+Pi/2;
++        else if (iclk >= 0.5*TD0 && iclk <= SecsPerDay-0.5*TD0)
+             RADTIM0 = Pi;
+-        else if (iclock > SecsPerDay-0.5*TD0)
+-            RADTIM0 = (0.5*TD0+iclock-SecsPerDay)*Pi/TD0;
++        else if (iclk > SecsPerDay-0.5*TD0)
++            RADTIM0 = (0.5*TD0+iclk-SecsPerDay)*Pi/TD0;
+ 
+         if (jClock < 0.5*TD1)
+             RADTIM1 = jClock*Pi/TD1+Pi/2;
+@@ -1525,15 +1540,15 @@
+         else if (jClock > SecsPerDay-0.5*TD1)
+             RADTIM1 = (0.5*TD1+jClock-SecsPerDay)*Pi/TD1;
+ 
+-        SW0 = SWOld*(1.0-Albedo0) * 86.4;
+         SW1 = ShortWave*(1.0-Albedo1) * 86.4;
++        SW0 = SW1;                                   // GLM4-AED3 patch: today's total all day
+ 
+         //# Determine the area under a sinusoidal curve and convert to a rate
+-        if (iclock <= (SecsPerDay - 0.5 * TD0) && jClock > (SecsPerDay - 0.5 * TD1) )
++        if (iclk <= (SecsPerDay - 0.5 * TD0) && jClock > (SecsPerDay - 0.5 * TD1) )
+             lQSW = (0.5*SW0*1000.0*(cos(-1.0*RADTIM0)+1.0) + 0.5*SW1*1000.0*(1.0-cos(-1.0*RADTIM1)))/noSecs;
+-        else if (iclock <= (SecsPerDay - 0.5 * TD0) && jClock <= (SecsPerDay - 0.5 * TD1))
++        else if (iclk <= (SecsPerDay - 0.5 * TD0) && jClock <= (SecsPerDay - 0.5 * TD1))
+             lQSW = (0.5*SW0*1000.0*(cos(-1.0*RADTIM0)-cos(-1.0*RADTIM1)))/noSecs;
+-        else if (iclock > (SecsPerDay - 0.5 * TD0) && jClock > (SecsPerDay - 0.5 * TD1))
++        else if (iclk > (SecsPerDay - 0.5 * TD0) && jClock > (SecsPerDay - 0.5 * TD1))
+             lQSW = (0.5*SW1*1000.0*(cos(-1.0*RADTIM0)-cos(-1.0*RADTIM1)))/noSecs;
+     }
+ 

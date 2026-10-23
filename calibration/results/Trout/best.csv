@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Trout,0.925590747269473,0.830370034165327,1.5975902672857,1.04062473657151,0.126987927313894,0.483038897891529,0.432946962434426,0.271,1.26856814299778,1.50639124043225,3.13146170464409,2.46152348273242,60,3660,50.5,2891,2804,"",20261021

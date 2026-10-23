@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+EsthwaiteWater,0.75050049147103,1.00183805464866,1.44100171332356,1.28240429499093,0.127928882883862,0.408081310255863,0.530288630503071,0.368,0.933694796966729,0.893225405143183,1.87102176068866,1.55588669701166,40,2460,17.7,4380,4392,"",20261021

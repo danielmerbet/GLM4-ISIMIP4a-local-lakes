@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Rotorua,1.49176811683126,1.23346193096611,1.09598899174504,1.94696368091057,0.205186919821426,0.50083151272741,0.242213567175654,0.221,0.790622662242862,0.689580190464414,2.29004077890692,2.95289865346674,77,4680,81.8,1250,1338,wind_factor,20261021

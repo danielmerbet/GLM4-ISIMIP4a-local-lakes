@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+LowerLakeZurich,1.04053993471365,0.951961223633477,1.04728873036709,1.84169593190309,0.14398871376225,0.456195073341951,0.156046020824697,0.149,0.930037657976981,1.20418530152593,1.08250373822862,1.30666617531304,74,4500,177,2655,2745,"",20261021

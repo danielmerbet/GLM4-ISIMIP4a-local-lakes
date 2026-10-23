@@ -1,0 +1,51 @@
+diff --git a/src/aed_api.F90 b/src/aed_api.F90
+index 8e0bc41..7af990f 100644
+--- a/src/aed_api.F90
++++ b/src/aed_api.F90
+@@ -348,6 +348,11 @@ MODULE aed_api
+ 
+    !# Arrays for environmental variables (used if they are not supplied externally)
+    AED_REAL,DIMENSION(:,:),ALLOCATABLE,TARGET :: lpar
++   !# GLM4-AED3 patch (private extinction): with bioshade_feedback = .false., AED works on a
++   !# private copy of the host's extinction coefficients, refreshed every step, so its own
++   !# light field (self-shading) never changes the host's (GLM's) heating
++   AED_REAL,DIMENSION(:,:),ALLOCATABLE,TARGET :: lextc
++   TYPE(AED_DPTR),DIMENSION(:),ALLOCATABLE :: host_extc
+ 
+ !# these two may be tuflow specific - dont seem to be used anywhere
+    !# Maps to nearest cell with water (for riparian exchange)
+@@ -803,6 +808,9 @@ SUBROUTINE aed_set_model_env(env, ncols, nlevs)
+ 
+    !# Check whether external light field is to be used, or allocate locally
+    IF (.NOT. link_ext_par) ALLOCATE(lpar(MaxLayers,ncols))
++   IF (.NOT. bioshade_feedback) THEN
++      ALLOCATE(lextc(MaxLayers,ncols)) ; ALLOCATE(host_extc(ncols))
++   ENDIF
+ 
+    !# Set effective time/step
+    dt_eff = env(1)%timestep/FLOAT(split_factor)  ! was timestep/FLOAT(split_factor)
+@@ -862,7 +870,13 @@ SUBROUTINE aed_set_model_env(env, ncols, nlevs)
+       data(col)%rho          => env(col)%rho
+       data(col)%rad          => env(col)%rad
+ 
+-      data(col)%extc         => env(col)%extc
++      IF (bioshade_feedback) THEN
++         data(col)%extc      => env(col)%extc
++      ELSE
++         host_extc(col)%p    => env(col)%extc
++         lextc(:,col)        =  env(col)%extc(1:MaxLayers)
++         data(col)%extc      => lextc(:,col)
++      ENDIF
+       IF (link_ext_par) THEN ; data(col)%par => env(col)%par
+       ELSE                   ; data(col)%par => lpar(:,col) ; ENDIF
+       data(col)%nir          => env(col)%nir
+@@ -1382,6 +1396,9 @@ SUBROUTINE aed_run_model(nCols, nLevs, doSurface)
+          ibot = 1 ; itop = col_lev
+       ENDIF
+ 
++      !# GLM4-AED3 patch: refresh AED's private extinction from the host (Kw)
++      IF (.NOT. bioshade_feedback) lextc(:,col) = host_extc(col)%p(1:MaxLayers)
++
+       CALL map_column(col, idx_lo, idx_hi, xcol, xdat)
+ 
+       d = 0; sd = 0

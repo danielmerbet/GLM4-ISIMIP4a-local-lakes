@@ -1,0 +1,103 @@
+&glm_setup
+   sim_name = 'GLMSimulation'
+   max_layers = 103
+   min_layer_vol = 0.1
+   min_layer_thick = 0.15
+   max_layer_thick = 1
+   density_model = 1
+/
+&light
+   light_mode = 0
+   n_bands = 4
+   light_extc = 1, 0.5, 2, 4
+   energy_frac = 0.51, 0.45, 0.035, 0.005
+   Benthic_Imin = 10
+   Kw = 1.30177811
+/
+&mixing
+   surface_mixing = 1
+   coef_mix_conv = 0.224730756
+   coef_wind_stir = 0.23
+   coef_mix_shear = 0.3
+   coef_mix_turb = 0.4054887724
+   coef_mix_KH = 0.3
+   coef_mix_hyp = 1.434437269
+   deep_mixing = 2
+   diff = 0
+/
+&morphometry
+   lake_name = 'Vortsjarv'
+   latitude = 58.31
+   longitude = 26.01
+   bsn_len = 26250.28
+   bsn_wid = 13125.14
+   bsn_vals = 62
+   H = 26.9, 27, 27.1, 27.2, 27.3, 27.4, 27.5, 27.6, 27.7, 27.8, 27.9, 28, 28.1, 28.2, 28.3, 28.4, 28.5, 28.6, 28.7, 28.8, 28.9, 29, 29.1, 29.2, 29.3, 29.4, 29.5, 29.6, 29.7, 29.8, 29.9, 30, 30.1, 30.2, 30.3, 30.4, 30.5, 30.6, 30.7, 30.8, 30.9, 31, 31.1, 31.2, 31.3, 31.4, 31.5, 31.6, 31.7, 31.8, 31.9, 32, 32.1, 32.2, 32.3, 32.4, 32.5, 32.6, 32.7, 32.8, 32.9, 33
+   A = 0, 2e+05, 4e+05, 6e+05, 8e+05, 940000, 1080000, 1220000, 1360000, 1500000, 2e+06, 2500000, 3e+06, 3500000, 4e+06, 5e+06, 6e+06, 7e+06, 8e+06, 9e+06, 12600000, 16200000, 19800000, 23400000, 2.7e+07, 44400000, 61800000, 79200000, 96600000, 1.14e+08, 124600000, 135200000, 145800000, 156400000, 1.67e+08, 174600000, 182200000, 189800000, 197400000, 2.05e+08, 210400000, 215800000, 221200000, 226600000, 2.32e+08, 235200000, 238400000, 241600000, 244800000, 2.48e+08, 250200000, 252400000, 254600000, 256800000, 2.59e+08, 260600000, 262200000, 263800000, 265400000, 2.67e+08, 268800000, 270600000
+   crest_elev = 33
+/
+&time
+   timefmt = 2
+   start = '1881-01-01 00:00:00'
+   stop = '2026-01-01 00:00:00'
+   dt = 3600
+   num_days = 730
+   timezone = 0
+/
+&output
+   out_dir = 'output'
+   out_fn = 'output'
+   nsave = 24
+   csv_lake_fname = 'lake'
+/
+&init_profiles
+   lake_depth = 6.1
+   num_depths = 2
+   the_depths = 0.5, 3
+   the_temps = 0.64, 1.16
+   the_sals = 0, 0
+/
+&meteorology
+   met_sw = .true.
+   lw_type = 'LW_IN'
+   rain_sw = .false.
+   atm_stab = 0
+   catchrain = .false.
+   rad_mode = 1
+   albedo_mode = 1
+   cloud_mode = 4
+   meteo_fl = 'meteo_file.csv'
+   subdaily = .false.
+   wind_factor = 1.259265026
+   sw_factor = 0.9963857554
+   lw_factor = 1
+   at_factor = 1
+   rh_factor = 1
+   rain_factor = 1
+   cd = 0.0013
+   ce = 0.0013
+   ch = 0.0013
+   rain_threshold = 0.01
+   runoff_coef = 0.3
+   time_fmt = 'YYYY-MM-DD hh:mm:ss'
+/
+&inflow
+   num_inflows = 1
+   names_of_strms = 'evapcomp'
+   subm_flag = .false.
+   strm_hf_angle = 65
+   strmbd_slope = 2
+   strmbd_drag = 0.016
+   inflow_factor = 1
+   inflow_fl = 'inflow_evapcomp.csv'
+   inflow_varnum = 3
+   inflow_vars = 'FLOW', 'SALT', 'TEMP'
+/
+&outflow
+   num_outlet = 0
+/
+&snowice
+   snow_albedo_factor = 1
+   snow_rho_max = 500
+   snow_rho_min = 100
+/

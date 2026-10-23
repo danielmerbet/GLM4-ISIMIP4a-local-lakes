@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+FallingCreek,1.05670871636185,0.701953890984324,2.96567860899505,1.67871667316649,0.115037633135275,0.584035937959787,1.37310919596471,0.463,1.81875066936376,1.94742026538272,5.47301905172331,5.90067863719251,62,3780,23,3477,8004,sw_factor,20261021

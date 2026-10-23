@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Kuivajarvi,1.00164140194123,0.822407574113634,2.90596191030328,1.52324175378367,0.10563830782713,0.649125944847681,1.30477689772617,0.449,0.882458341906174,1.21768524587533,1.61023496796341,1.5302421481255,53,3240,22.7,8528,8720,coef_mix_turb,20261021

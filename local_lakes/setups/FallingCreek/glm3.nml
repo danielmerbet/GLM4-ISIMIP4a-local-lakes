@@ -1,0 +1,103 @@
+&glm_setup
+   sim_name = 'GLMSimulation'
+   max_layers = 90
+   min_layer_vol = 0.1
+   min_layer_thick = 0.15
+   max_layer_thick = 1
+   density_model = 1
+/
+&light
+   light_mode = 0
+   n_bands = 4
+   light_extc = 1, 0.5, 2, 4
+   energy_frac = 0.51, 0.45, 0.035, 0.005
+   Benthic_Imin = 10
+   Kw = 1.373109196
+/
+&mixing
+   surface_mixing = 1
+   coef_mix_conv = 0.1150376331
+   coef_wind_stir = 0.23
+   coef_mix_shear = 0.3
+   coef_mix_turb = 0.584035938
+   coef_mix_KH = 0.3
+   coef_mix_hyp = 1.678716673
+   deep_mixing = 2
+   diff = 0
+/
+&morphometry
+   lake_name = 'FallingCreek'
+   latitude = 37.31
+   longitude = -79.84
+   bsn_len = 552.5163
+   bsn_wid = 276.2581
+   bsn_vals = 28
+   H = 497.7, 498, 498.3, 498.7, 499.3, 499.6, 499.9, 500.2, 500.5, 500.8, 501.1, 501.4, 501.7, 502.3, 502.6, 502.9, 503.2, 503.5, 503.8, 504.1, 504.4, 504.7, 505.1, 505.4, 505.7, 506.3, 506.6, 507
+   A = 0, 61.408883, 494.615572, 1201.23579, 3239.620513, 4358.358439, 5637.911458, 6929.077352, 8228.697419, 9469.324081, 10811.30792, 12399.67051, 14484.22802, 19631.05422, 22583.13995, 25790.70893, 28442.99667, 31155.95008, 36269.3312, 42851.13714, 51179.89109, 59666.85885, 68146.39437, 76424.14457, 85430.25429, 103030.4489, 111302.1604, 119880.9164
+   crest_elev = 507
+/
+&time
+   timefmt = 2
+   start = '1881-01-01 00:00:00'
+   stop = '2026-01-01 00:00:00'
+   dt = 3600
+   num_days = 730
+   timezone = 0
+/
+&output
+   out_dir = 'output'
+   out_fn = 'output'
+   nsave = 24
+   csv_lake_fname = 'lake'
+/
+&init_profiles
+   lake_depth = 9.3
+   num_depths = 19
+   the_depths = 0.1, 0.61, 1.11, 1.62, 2.12, 2.63, 3.13, 3.64, 4.14, 4.65, 5.15, 5.66, 6.16, 6.67, 7.17, 7.68, 8.18, 8.69, 9.19
+   the_temps = 9.52, 8.26, 7.95, 7.75, 7.47, 7.25, 6.99, 6.69, 6.29, 6.03, 5.88, 5.76, 5.65, 5.54, 5.46, 5.33, 5.21, 5.16, 5.35
+   the_sals = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+/
+&meteorology
+   met_sw = .true.
+   lw_type = 'LW_IN'
+   rain_sw = .false.
+   atm_stab = 0
+   catchrain = .false.
+   rad_mode = 1
+   albedo_mode = 1
+   cloud_mode = 4
+   meteo_fl = 'meteo_file.csv'
+   subdaily = .false.
+   wind_factor = 1.056708716
+   sw_factor = 0.701953891
+   lw_factor = 1
+   at_factor = 1
+   rh_factor = 1
+   rain_factor = 1
+   cd = 0.0013
+   ce = 0.0013
+   ch = 0.0013
+   rain_threshold = 0.01
+   runoff_coef = 0.3
+   time_fmt = 'YYYY-MM-DD hh:mm:ss'
+/
+&inflow
+   num_inflows = 1
+   names_of_strms = 'evapcomp'
+   subm_flag = .false.
+   strm_hf_angle = 65
+   strmbd_slope = 2
+   strmbd_drag = 0.016
+   inflow_factor = 1
+   inflow_fl = 'inflow_evapcomp.csv'
+   inflow_varnum = 3
+   inflow_vars = 'FLOW', 'SALT', 'TEMP'
+/
+&outflow
+   num_outlet = 0
+/
+&snowice
+   snow_albedo_factor = 1
+   snow_rho_max = 500
+   snow_rho_min = 100
+/

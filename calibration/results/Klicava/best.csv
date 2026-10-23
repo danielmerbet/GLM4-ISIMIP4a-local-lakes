@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Klicava,1.04772668012371,1.00171889542173,1.86336543263477,1.7926986875363,0.170045127888561,0.419438767043354,0.480748281619771,0.258,1.26178938995069,1.27304838452932,1.75793841463557,1.54984923448322,70,4260,317.4,2641,4017,"",20261021

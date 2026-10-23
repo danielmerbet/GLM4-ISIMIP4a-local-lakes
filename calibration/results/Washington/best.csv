@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Washington,1.49330994613587,1.05499614721233,0.954127428848669,1.69650474889756,0.269158101297692,0.355240177928386,0.19368786805628,0.203,1.03872197843418,1.19570917565088,1.82713921970904,1.86038523592704,52,3180,62.9,3321,3159,wind_factor,20261021

@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+MtBold,1.4615263122208,1.26194666596476,0.674203715239406,1.98174802724079,0.194160123029724,0.359104278814256,0.1591120767965,0.236,1.56846800950607,2.37961722751676,3.87933671364597,1.90295907029335,65,3960,127,10478,24437,coef_mix_hyp,20261021

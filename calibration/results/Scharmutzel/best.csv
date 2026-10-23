@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Scharmutzel,1.06947268976364,1.08199027248485,1.4359056192568,1.05967497271427,0.210796288156409,0.622420131531544,0.393438139676364,0.274,0.854785110391649,0.968138118416481,1.162891989611,1.28337676349351,40,2460,26.7,4556,4742,"",20261021

@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Bryrup,1.09205280649504,0.985309787159087,2.47277030313031,0.362129981501798,0.106822250500742,0.592559418783231,1.16220204247125,0.47,1.00735875974492,1.17791482831707,1.68503405131737,1.2247044198745,86,5220,39.2,745,509,"",20261021

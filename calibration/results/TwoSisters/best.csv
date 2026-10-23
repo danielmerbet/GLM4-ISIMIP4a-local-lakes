@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+TwoSisters,0.982435911719222,0.904428974539042,0.734077097848058,0.526474114445299,0.101021907497197,0.413528325449675,0.251054367464036,0.342,1.3450632962762,2.05450711308292,2.405808606125,1.97160232238519,38,2340,22.2,413,180,"",20261021

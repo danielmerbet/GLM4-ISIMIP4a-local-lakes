@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Ekoln,1.17402084931014,1.15632738213285,0.528683501826224,1.39782103891417,0.266805556993688,0.487501327251084,0.136400343471166,0.258,0.740367023008119,2.00852849358023,1.83369887638766,1.64653488395422,97,5880,89,26342,17426,"",20261021

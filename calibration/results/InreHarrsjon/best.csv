@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+InreHarrsjon,1.49746819560364,1.29807005495535,1.22592581875097,0.185916568916904,0.15908916961428,0.649771239093524,0.726974010519324,0.593,1.82745955495084,1.70536448515384,2.59398600550955,2.27634391974462,100,6060,44.5,9108,10571,wind_factor;sw_factor;coef_mix_turb,20261021

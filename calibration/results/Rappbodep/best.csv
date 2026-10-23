@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Rappbodep,0.858376641536895,0.785538485857244,1.70966340916107,0.282553842996078,0.153586631831465,0.59901422538015,0.613769163888824,0.359,0.795733854590633,1.26797805524146,3.00540195433667,3.54380089364078,91,5520,45.1,2785,4667,"",20261021

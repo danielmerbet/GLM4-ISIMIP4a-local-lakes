@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Annie,1.47168462331174,1.00023692046945,1.601988756496,1.06423264461651,0.170365053166344,0.608160244557075,0.547880154721631,0.342,1.24169729373435,1.57972155854645,2.40490547119912,3.21298029338439,61,3720,35,23936,34213,"",20261021

@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Okauchee,0.990117797729738,0.927208917206283,1.62342464145471,1.44465489131498,0.145762996423585,0.498292624065653,0.470793146021866,0.29,1.13722849581774,1.87468108276682,2.57213454517928,2.05325908532128,100,6060,77.2,165,194,"",20261021

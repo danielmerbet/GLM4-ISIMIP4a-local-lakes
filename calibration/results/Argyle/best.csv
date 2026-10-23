@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Argyle,0.257439570499023,0.909367714288718,0.780158744346522,1.87987578349253,0.125252029274832,0.470360568352044,0.187238098643165,0.24,0.926687081852712,0.82066383296301,2.24931358947689,2.34133434214404,72,4380,103,3336,2865,"",20261021

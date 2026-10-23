@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Windermere,0.646429744075946,1.07617406083316,0.508432644057088,1.42391924312413,0.108935510506853,0.58724411739245,0.124057565149929,0.244,0.790447223869021,1.13751177235313,1.75305732106487,1.0894707565793,32,1980,25.1,4380,4392,"",20261021

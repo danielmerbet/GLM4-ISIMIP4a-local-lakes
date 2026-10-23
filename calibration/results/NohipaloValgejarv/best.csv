@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+NohipaloValgejarv,0.362420734076295,0.797661542011648,1.3671863886863,1.90312304750551,0.120822924748063,0.504690068700504,0.559179232972696,0.409,0.949303559100001,1.04880184326279,2.93417514521005,3.2808211584795,48,2940,20.8,2866,2775,"",20261021

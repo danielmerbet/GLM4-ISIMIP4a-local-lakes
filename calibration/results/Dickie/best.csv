@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Dickie,1.01957690820191,0.948666924570249,1.90405684246551,0.562240422097966,0.208906301371753,0.581929944711737,0.792087646465653,0.416,0.997365513990837,1.83476847239968,3.23146682766704,3.46222423532591,53,3240,24.2,730,757,"",20261021

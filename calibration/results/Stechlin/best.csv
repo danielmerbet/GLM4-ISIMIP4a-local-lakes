@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Stechlin,0.656073829344735,0.940267790312478,1.15781999815107,0.383309047018604,0.25685883082533,0.427856091236103,0.22809053963576,0.197,0.793297773524384,1.00247902185099,1.51956391859864,1.76038230957169,78,4740,89.6,2194,2402,"",20261021

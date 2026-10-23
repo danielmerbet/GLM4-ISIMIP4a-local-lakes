@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Allequash,1.1724721188331,0.978063861651346,1.2971083362354,0.287042038684711,0.217723249830306,0.639521107152104,0.678387659851112,0.523,1.04780864121661,1.88727463745315,1.55486739619577,1.77663005169218,36,2220,13.8,690,709,"",20261021

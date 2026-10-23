@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Mozhaysk,1.49446196539793,1.1031549048312,2.00336992752273,0.948090258337744,0.11299593904987,0.471520989830606,0.657105336227454,0.328,1.35051889819326,1.17226647236819,1.63897839736645,1.73439105100209,26,1620,12,1498,1618,wind_factor,20261021

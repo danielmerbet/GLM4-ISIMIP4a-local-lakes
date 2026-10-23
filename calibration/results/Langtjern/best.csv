@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Langtjern,0.973732356857136,0.74775733382784,2.28674999867026,0.820362582846458,0.215133150044181,0.448087608169072,1.07477249937502,0.47,1.29782169326217,1.38696602999089,3.24792738211506,3.26652258968962,44,2700,15.2,4138,3905,"",20261021

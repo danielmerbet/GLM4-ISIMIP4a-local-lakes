@@ -1,0 +1,8 @@
+upstream/
+bin/*
+!bin/.gitkeep
+__pycache__/
+*.pyc
+calibration/runs/
+calibration/obs/
+local_lakes/runs/

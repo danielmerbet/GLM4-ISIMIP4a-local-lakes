@@ -1,0 +1,2 @@
+lake,wind_factor,sw_factor,kw_scaling,coef_mix_hyp,coef_mix_conv,coef_mix_turb,Kw,kw_base,rmse_cal,rmse_val,rmse_cal_default,rmse_val_default,generations,evaluations,minutes,n_obs_cal,n_obs_val,at_bound,seed
+Muggelsee,1.21763886188334,0.990318219889499,2.44708512763369,1.02098560004851,0.133880437988249,0.551725353784859,1.1550241802431,0.472,0.704049199654451,0.827768948776642,0.865371370705126,0.883923581482854,89,5400,50.1,12935,15870,"",20261021
