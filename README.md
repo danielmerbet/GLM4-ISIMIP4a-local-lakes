@@ -18,7 +18,7 @@ compare every delivered lake with its observations.
 | Institutions | Spanish National Research Council (CSIC), Centre for Advanced Studies of Blanes (CEAB), Spain; Vrije Universiteit Brussel (VUB), Belgium |
 
 <!-- BEGIN:summary -->
-Results at a glance: 77 of 77 lakes delivered. Median water-temperature RMSE of the delivered files: **1.11 °C** in the calibration years, **1.31 °C** in the validation years and **1.44 °C** in years the calibration never used (45 lakes); GLM with its default parameters: 1.99 °C in the validation years.
+Results at a glance: 77 of 77 lakes delivered. Median water-temperature RMSE of the delivered files: **1.11 °C** in the calibration years, **1.30 °C** in the validation years and **1.43 °C** in years the calibration never used (45 lakes); GLM with its default parameters: 1.97 °C in the validation years.
 <!-- END:summary -->
 
 ![Validation error per lake](figures/summary_map.png)
@@ -139,7 +139,7 @@ light-extinction range):
   `calibration/results_all.csv`.
 
 <!-- BEGIN:calibration -->
-Over the 77 calibrated lakes (median, interquartile range in brackets): calibration RMSE **1.04 °C** (0.84-1.28), validation **1.37 °C** (1.06-1.69); with GLM's default parameters 1.95 and 1.99 °C. The calibration improved the validation RMSE in 66 of 77 lakes. Calibrated parameter medians: `wind_factor` 1.05, `sw_factor` 0.965, `kw_scaling` 1.28, `coef_mix_hyp` 1.36, `coef_mix_conv` 0.17, `coef_mix_turb` 0.505; 20 lakes have at least one parameter at a bound (`at_bound` in `results_all.csv`).
+Over the 77 calibrated lakes (median, interquartile range in brackets): calibration RMSE **1.02 °C** (0.84-1.28), validation **1.37 °C** (1.06-1.69); with GLM's default parameters 1.94 and 1.97 °C. The calibration improved the validation RMSE in 66 of 77 lakes. Calibrated parameter medians: `wind_factor` 1.05, `sw_factor` 0.965, `kw_scaling` 1.27, `coef_mix_hyp` 1.36, `coef_mix_conv` 0.17, `coef_mix_turb` 0.505; 20 lakes have at least one parameter at a bound (`at_bound` in `results_all.csv`).
 <!-- END:calibration -->
 
 ![RMSE per lake](figures/summary_rmse_by_lake.png)
@@ -194,10 +194,11 @@ missing value 1e20; compressed (zlib). Each lake folder also has `SHA256SUMS` an
   `watertemp` of these lakes for trends. (Kivu, Bosumtwi and Edward are permanently stratified in reality too.)
 - *Ice on Tahoe.* The model forms ice in two cold winters (about 20 days around 1917 and 58 days around 1949);
   Lake Tahoe does not freeze.
-- *Trout Lake hypsometry.* The ISIMIP3 hypsometry used for Trout Lake gives a surface area of 160.8 km², about ten
-  times the lake's area (15.65 km²); found when the observations were reviewed for
-  [ISIMIP4_Local_Lakes_ObsData](https://github.com/ISIMIP-LAKE/ISIMIP4_Local_Lakes_ObsData). The Trout Lake run will be
-  repeated once the provider confirms the correct areas.
+- *Trout Lake hypsometry (corrected).* The ISIMIP3 hypsometry of Trout Lake gave 160.8 km² at the surface, ten
+  times the lake (16.08 km², NTL-LTER); all its areas were divided by 10 (`calibration/build_lake_table.py`) and the lake
+  was re-calibrated and re-run. Validation RMSE of the calibration 1.51 → 1.41 °C, of the delivered file 1.56 → 1.29 °C
+  (GLM defaults 2.46 → 1.51 °C). Found when the observations were reviewed for
+  [ISIMIP4_Local_Lakes_ObsData](https://github.com/ISIMIP-LAKE/ISIMIP4_Local_Lakes_ObsData).
 
 ![All variables, Lake Erken](figures/lakes/Erken_variables.png)
 
@@ -215,8 +216,8 @@ Median RMSE (°C) of the delivered files per lake, and the bias (model − obser
 | Observations | Lakes | Median RMSE | Median bias |
 |---|---|---|---|
 | calibration half | 77 | 1.11 | -0.05 |
-| validation half | 77 | 1.31 | -0.00 |
-| all other years 1901-2025 | 45 | 1.44 | -0.02 |
+| validation half | 77 | 1.30 | +0.01 |
+| all other years 1901-2025 | 45 | 1.43 | -0.02 |
 
 The delivered run differs from the calibration runs (125 years with a repeated-forcing spin-up instead of a 20-year spin-up and an observed initial profile), so its calibration/validation scores differ slightly from `best.csv`.
 
@@ -299,7 +300,7 @@ File checks (`local_lakes/qc_isimip.py`, `results/qc.csv`): every lake has the 1
 | Lake Tarawera | 87.5 | 0.42 / 0.93 / 0.48 | [temperature](figures/lakes/Tarawera_temperature.png), [all variables](figures/lakes/Tarawera_variables.png) |
 | Lake Thun | 212 | 1.00 / 1.15 / 1.03 | [temperature](figures/lakes/Thun_temperature.png), [all variables](figures/lakes/Thun_variables.png) |
 | Toolik Lake | 26 | 1.62 / 1.54 / 1.99 | [temperature](figures/lakes/Toolik_temperature.png), [all variables](figures/lakes/Toolik_variables.png) |
-| Trout Lake | 33 | 1.68 / 1.55 / 2.15 | [temperature](figures/lakes/Trout_temperature.png), [all variables](figures/lakes/Trout_variables.png) |
+| Trout Lake | 33 | 1.32 / 1.29 / 1.31 | [temperature](figures/lakes/Trout_temperature.png), [all variables](figures/lakes/Trout_variables.png) |
 | Trout Bog | 8 | 2.18 / 1.94 / 2.07 | [temperature](figures/lakes/TroutBog_temperature.png), [all variables](figures/lakes/TroutBog_variables.png) |
 | Two Sisters Lake | 19 | 1.63 / 2.28 / 1.87 | [temperature](figures/lakes/TwoSisters_temperature.png), [all variables](figures/lakes/TwoSisters_variables.png) |
 | Lake Vendyurskoe | 14 | 1.24 / 1.23 / 1.18 | [temperature](figures/lakes/Vendyurskoe_temperature.png), [all variables](figures/lakes/Vendyurskoe_variables.png) |

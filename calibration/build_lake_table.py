@@ -51,6 +51,9 @@ TMIN, TMAX = LIMITS["Temp_degreeCelcius"]
 # the temperature column; observed range otherwise 26.0-32.7 C (deep water 27.2 C). Reported for the data contributor.
 OBS_QC = {"Bosumtwi": {"min_value": 24.0, "max_value": 33.0,
                         "reason": "value = depth entries (column mix-up), outside 24-33 C"}}
+# Hypsometry area factors (user decision 2026-10-23). Trout Lake's ISIMIP3 hypsometry gives 160,790,000 m2 at
+# the surface, ten times the lake (NTL-LTER: 1,607.9 ha; sheet 15.65 km2): a decimal shift. All its areas / 10.
+HYPSO_AREA_FACTOR = {"Trout": (0.1, "areas ten times too large in the source file (decimal shift); divided by 10")}
 
 
 def num(x):
@@ -151,6 +154,10 @@ def main():
         if not hf.exists():                           # some ISIMIP3 lakes keep it in ../hypso
             hf = I3.parent / "hypso" / f"{lake}_hypsometry.csv"
         h = read_hypso(hf)
+        if lake in HYPSO_AREA_FACTOR:
+            fac, why = HYPSO_AREA_FACTOR[lake]
+            h = h.assign(area=h.area * fac)
+            print(f"  {lake}: hypsometry areas x {fac} ({why})")
         # A fully inverted depth axis (area growing with depth at every level) is a height-
         # above-bottom column mislabelled DEPTH: Bosumtwi's ISIMIP4 file (0.06 km2 at "0 m",
         # 48.8 km2 at 73.4 m; the ISIMIP3 file has the same numbers the right way up).
